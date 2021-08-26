@@ -10,5 +10,5 @@ Portifolio de dev
 
 - :package: nova fubcionalidade
 - :up: atualizacao
-- :beatle: correcao de bug
+- :beetle: correcao de bug
 - :checkered_flag: release
