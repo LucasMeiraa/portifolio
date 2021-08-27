@@ -22,7 +22,7 @@
         </div>
 
 
-        <header>
+        <header id="home">
             <div class="img-wrapper">
                 <img src="imagens/bg.jpg" alt="">
             </div>
@@ -36,11 +36,11 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -116,7 +116,7 @@
             </div>
           </section>
 
-          <section class="sessao-projetos">
+          <section class="sessao-projetos" id="projetos">
                 <div class="sessao-header">
                     <h1>Projetos</h1>
                 </div>
@@ -130,7 +130,7 @@
                             <h2>ToDo List</h2>
                             <h3>Javascript</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit optio possimus asperiores velit totam dolores magni quos voluptate, cum quo eligendi fugiat aspernatur sapiente voluptatibus saepe molestiae rerum aut quod.</p>
-                            <button>Saiba Mais</button>
+                            <button class="btn">Saiba Mais</button>
                         </div>
                     </div>
                     <div class="card">
@@ -152,7 +152,7 @@
                             <h2>Casa Bela</h2>
                             <h3>HTML</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero nihil praesentium nam amet, animi magnam? Et deleniti, suscipit porro repudiandae sed aspernatur nihil laborum animi facilis reprehenderit esse sit debitis.</p>
-                            <button>Saiba Mais</button>
+                            <button class="btn">Saiba Mais</button>
                         </div>
                     </div>
                 </div>
@@ -184,6 +184,50 @@
             </div>
           </section>
 
+          <section class="sessao-orcamento" id="orcamento">
+              <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                  <label for="qtd">Qtde da Páginas</label>
+                  <input type="number" min="1" name="qtde" id="qtde">
+                  <label for="js">Preciso de um script JS</label>
+                  <input type="checkbox" name="js" id="js">
+                  <label>Layout</label>
+                  <div class="group-layout">
+                    <div>
+                      <input type="radio" name="layout" id="layout-sim">
+                      <label for="layout-sim">Preciso de um Layout</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="layout" id="layout-sim">
+                      <label for="layout-nao">Ja tenho um Layout</label>
+                    </div>
+                  </div>
+                  <label for="prazo">Prazo</label>
+                  <input type="range" name="prazo" id="prazo">
+                  <label id="preco">R$ 0,00</label>
+                  <button class="btn btn-orcamento" type="submit">Enviar</button>
+                </form>
+              </div>
+          </section>
+
+          <footer>
+            <div class="footer-content">
+              <p>
+                Copyright &copy; 2020, ETECIA DS - Todos os diretos reservados
+              </p>
+              <div class="social-list">
+                <ul>
+                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+          <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+          </a>
     </div>
 </body>
     <script src="script.js"></script>
